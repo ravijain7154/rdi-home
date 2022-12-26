@@ -1,0 +1,200 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+/*Header*/
+header {
+    background-color: #313e4721;
+    padding: 25px 0;
+}
+header nav.navbar a.navbar-brand img {
+    width: 180px;
+}
+
+header ul.navbar-nav li.nav-item input {
+    width: 320px;
+    border: 0;
+    padding: 10px;
+      background-image: url('searchicon.png');
+}
+header ul.navbar-nav li.nav-item input::placeholder {
+  color: #ccc;
+  font-size: 12px;
+}
+header nav.navbar ul.navbar-nav li.nav-item a{
+    color: #fff;
+    font-weight: 600;
+}
+header ul.navbar-nav li.nav-item a i {
+    font-size: 30px;
+    color: #fff;
+}
+header nav.navbar ul.navbar-nav li.nav-item p {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+}
+header .navbar-dark .navbar-brand {
+    margin-right: 30px;
+}
+header nav.navbar ul.navbar-nav li.search-bar {
+    position: relative;
+}
+header ul.navbar-nav li.nav-item:after {
+    border-right: 1px solid #fff;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 44px;
+    right: 0px;
+}
+
+header ul.navbar-nav li.nav-item.search-bar:after ,  header ul.navbar-nav li.nav-item:last-child:after{
+    border: 0 !important;
+}
+header nav.navbar ul.navbar-nav li.nav-item {
+    position: relative;
+    padding-right: 10px;
+}
+header nav.navbar ul.navbar-nav li.search-bar i.fa.fa-search {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    right: 12px;
+    transform: translate(-50% ,-50%);
+}
+/*Header*/
+
+section.inner-boxes {
+    padding: 50px 0;
+}
+ul.left-tabs {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 20px;
+    margin:0 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+    list-style: none;
+}
+section.inner-boxes ul.left-tabs li.nav-item {
+    padding: 20px 0;
+}
+section.inner-boxes ul.left-tabs li.nav-item a.nav-link {
+    font-size: 12px;
+    padding: 0;
+     color:#000;
+}
+section.inner-boxes ul.left-tabs li a span {
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+section.inner-boxes .three-box {
+    margin-top: -25px;
+}
+section.inner-boxes ul.left-tabs li.nav-item a.nav-link i {
+    font-size: 30px;
+    padding: 10px 0;
+    display: block;
+}
+section.inner-boxes ul.left-tabs li:last-child  a span {
+    border: 0 !important;
+}
+
+.box-inner {
+    border: 10px solid #fff;
+}
+
+
+section.inner-boxes .right-cont p {
+    background-color: #15262e;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+/*.col_body
+{
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+    border:5px solid white;
+}*/
+/*.col_body p{
+    text-transform:uppercase;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    color:azure;
+    font-size:15px;
+    background-color: black;
+}*/
+.card .card-body .card-title
+{
+  font-size:18px;
+}
+.card .card-body .card-text
+{
+    font-size: 14px;
+}
+.card .card-body .link-txt
+{
+    font-weight:500;
+    font-size: 15px;
+    margin-right:3px;
+}
+.card .card-body .card-link{
+    color: #2c3d43;
+    border-bottom:1px solid ;
+}
+@media (max-width: 767px){
+    ul.left-tabs {
+        display: flex;
+        justify-content: space-around;        
+    }
+    section.inner-boxes ul.left-tabs li a span{border: none;} 
+}
+@media(max-width:992px){
+    
+}
+
+@media (max-width: 991px) {
+
+    header ul.navbar-nav {
+        display: block;
+        text-align: left !important;
+    }
+    header ul.navbar-nav li {
+        padding: 15px 0;
+        border: 0px !important;
+    }
+    header ul.navbar-nav li.nav-item.search-bar:after, header ul.navbar-nav li.nav-item:after {
+        border: 0 !important;
+    }
+    header ul.navbar-nav li.nav-item input {
+        width: 100%;
+    }
+    header .navbar-dark .navbar-brand {
+        margin-right: 0px;
+    }
+    section.inner-boxes ul.left-tabs {
+        margin: 0;
+    }
+} 
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header ul.navbar-nav li.nav-item input {
+        width: 250px;
+    }
+}
